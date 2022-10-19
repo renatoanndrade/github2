@@ -1,0 +1,27 @@
+Versões que já foram add:
+1) git reflog
+	essa linha vai te mostrar todos os códigos das versaõ
+voltar a uma versão anterior:
+2) git reset --hard codigo_da_versao
+
+branchs (Funciona como uma linha do tempo paralela)
+1) para visualizar as que tem: git branch
+	criando uma nova: git branch staging (staging é o nome da nova branch - sem aspas mesmo)
+2) baixar as atualizações da branch principal e mais atualizada: git pull
+3) para trocar de branch: git checkout staging
+4) fazer as atualizações e dar push
+
+
+Depois que vc fez as atualizações na branch e quer trazer para a principal, o que fazer?
+MERGE
+1) volta para branch principal: git branch main
+2) traz as atualizações do servido para sua maquina da branch main: git pull
+3) comando para dar o merge da branch que eu tava mechendo: git merge staging
+4) faze o push para a branch main: git push (nao precisa de commit)
+
+Como eu criou uma maneira de não mandar algum arquivo para git? Como isso é util? (IGNORE)
+Senhas proprias geralmente.
+1) cria um arquivo ignore: touch .gitignore
+2) definir quais pastas ou arquivos que vc não quer subir para o git.
+
+
